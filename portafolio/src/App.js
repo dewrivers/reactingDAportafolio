@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
+
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -15,6 +16,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+     
       title: 'Rocio Rios Bautista',
       headerLinks: [
         { title: 'Home', path: '/' },
@@ -22,6 +24,7 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact' }
       ],
       home: {
+        
         title: 'Projects the make a difference',
         subTitle: 'Projects the make a difference',
         text: 'Checkout my projects below'

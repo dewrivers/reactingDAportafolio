@@ -13,7 +13,7 @@ const Footer = () => {
                         Rocio Rios Bautista
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Rocio Rios.
+                        This site was made by R.R.B
                     </Col>
                 </Row>
             </Container>

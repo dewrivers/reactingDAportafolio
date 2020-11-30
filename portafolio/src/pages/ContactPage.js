@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 import Hero from '../components/Hero';
-// import Content from '../components/Content';
+ import Content from '../components/Content';
 import Axios from 'axios';
 
 class ContactPage extends React.Component {
@@ -69,7 +69,7 @@ class ContactPage extends React.Component {
             <div>
                 <Hero title={this.props.title} />
 
-                {/* <Content>
+                <Content>
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
@@ -97,7 +97,7 @@ class ContactPage extends React.Component {
                         {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
                         {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
                     </Form>
-                </Content> */}
+                </Content>
             </div>
         );
     }

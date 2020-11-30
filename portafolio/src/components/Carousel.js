@@ -2,8 +2,8 @@ import React from 'react';
 
 import Card from '../components/Card';
 
-import weatherDashboard from '../assets/img/weatherDashboard.JPG';
-import NoteDrop from '../assets/img/NoteDrop.JPG';
+import fitness from '../assets/img/fitness.png';
+import RRB from '../assets/img/rrb.PNG';
 import codingQuiz from '../assets/img/codingQuiz.JPG';
 
 import Container from 'react-bootstrap/Container';
@@ -17,24 +17,24 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Dev Grub',
-                    subTitle: 'The cookbook for developers',
-                    imgSrc: weatherDashboard,
-                    link: 'https://dewrivers.github.io/Weather-APP/',
+                    title: 'Fitness Tracker',
+                    subTitle: 'Tracker with dashboard',
+                    imgSrc: fitness,
+                    link: 'https://serene-hollows-70183.herokuapp.com/',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Garrett Love',
-                    subTitle: 'YouTube channel',
-                    imgSrc: NoteDrop,
+                    title: 'Rocio',
+                    subTitle: '',
+                    imgSrc: RRB,
                     link: '',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
+                    title: 'Quiz Game',
+                    subTitle: 'A codding quiz game',
                     imgSrc: codingQuiz,
                     link: ' https://dewrivers.github.io/quiz-challenge/',
                     selected: false
@@ -64,7 +64,10 @@ class Carousel extends React.Component {
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
+            return <Card 
+                    item={item} 
+                   click={(e => this.handleCardClick(item.id, e))} 
+                     key={item.id} />
         })
     }
 
